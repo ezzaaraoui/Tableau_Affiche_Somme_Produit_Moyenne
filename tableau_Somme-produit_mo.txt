@@ -1,0 +1,22 @@
+algorithme tableau_Somme-produit_moyenne
+
+variable
+	tableau T(10):reel
+	s,p:reel 
+	i:entier
+
+Debut
+	pour i <-- 0 a 9 faire 
+		ecrire("donner le nombre ",i+1)
+		lire(T(i))
+	fin pour
+	s<--0
+	p<--1
+	pour i <-- 0 a 9 faire 
+		s<--s+T(i)
+		p<--p*T(i)
+	fin pour
+	ecrire("la somme est : ",s)	
+	ecrire("le produit est : ",p)	
+	ecrire("la moyenne est : ",s/10)	
+fin
